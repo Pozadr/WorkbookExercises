@@ -13,6 +13,13 @@ public class Main {
         task3.displayG(7);
         task3.displayH(7);
         task3.displayI(7);
+        // Task4
+        System.out.println();
+        Task4 task4 = new Task4();
+        String numberToReduce = "2688";
+        int reducedValue = task4.reduce(numberToReduce);
+        System.out.println("Number to reduce: " + numberToReduce);
+        System.out.println("After reduce: " + reducedValue);
 
 
     }
