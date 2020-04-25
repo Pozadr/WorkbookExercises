@@ -16,7 +16,7 @@ public class Main {
         // Task4
         System.out.println();
         Task4 task4 = new Task4();
-        String numberToReduce = "2688";
+        String numberToReduce = "202020";
         int reducedValue = task4.reduce(numberToReduce);
         System.out.println("Number to reduce: " + numberToReduce);
         System.out.println("After reduce: " + reducedValue);
