@@ -1,7 +1,6 @@
-import javafx.concurrent.Task;
-
 public class Task3 {
 
+    // Triangle 1
     public void displayA(int size){
         System.out.println();
         for(int i=1; i<=size; i++){
@@ -13,6 +12,8 @@ public class Task3 {
         }
     }
 
+
+    // Triangle 2
     public void displayB(int size){
         System.out.println();
         for(int i=size; i>0; i--){
@@ -24,6 +25,8 @@ public class Task3 {
         }
     }
 
+
+    // Triangle 3
     public void displayC(int size){
         System.out.println();
         for(int i=1; i<=size; i++){
@@ -38,6 +41,8 @@ public class Task3 {
         }
     }
 
+
+    // Triangle 4
     public void displayD(int size){
         System.out.println();
         for(int i=size; i>0; i--){
@@ -52,6 +57,8 @@ public class Task3 {
         }
     }
 
+
+    // Square
     public void displayE(int size){
         System.out.println();
         for(int i=1; i<=size; i++){
@@ -72,6 +79,79 @@ public class Task3 {
             System.out.println();
         }
     }
+
+
+    // Letter 'S'
+    public void displayF(int size){
+        System.out.println();
+        for(int i=1; i<=size; i++){
+            if(i==1 || i == size){
+                for (int j=1; j<=size; j++) {
+                    System.out.print("# ");
+                }
+            }
+            else {
+                for (int j=1; j<=size; j++) {
+                    if (j == i) {
+                        System.out.print("# ");
+                    } else {
+                        System.out.print("  ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+    }
+
+
+    // Letter 'Z'
+    public void displayG(int size){
+        System.out.println();
+        for(int i=1; i<=size; i++){
+            if(i==1 || i == size){
+                for (int j=1; j<=size; j++) {
+                    System.out.print("# ");
+                }
+            }
+            else {
+                for (int j=1; j<=size; j++) {
+                    if (j == size - i + 1) {
+                        System.out.print("# ");
+                    } else {
+                        System.out.print("  ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+    }
+
+
+    // Hourglass
+    public void displayH(int size){
+        System.out.println();
+        for(int i=1; i<=size; i++){
+            if(i==1 || i == size){
+                for (int j=1; j<=size; j++) {
+                    System.out.print("# ");
+                }
+            }
+            else {
+                for (int j=1; j<=size; j++) {
+                    if (j == i || j == size - i + 1) {
+                        System.out.print("# ");
+                    } else {
+                        System.out.print("  ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+    }
+
+
+    // Square with diagonals
+
 
 
 }
