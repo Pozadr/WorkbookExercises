@@ -26,6 +26,11 @@ public class Main {
         System.out.println("\nTask5");
         Task5 task5 = new Task5();
         task5.displayWhoWon("XXXXoxoxoxXXXXX0000xxxx");
+        // Task6
+        System.out.println("\nTask6");
+        Task6 task6 = new Task6();
+        task6.convertTextMessage("Ala ma kota, a kot ma Alę !");
+
 
 
     }
