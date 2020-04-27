@@ -2,12 +2,10 @@ public class Task5 {
 
     public void displayWhoWon(String gameStatus){
         String result = "";
-
-        //try cauch do zrobienia ArrayIndexOutOfBoundsException
-        String[] inputToArray = new String [9];
-        inputToArray = gameStatus.split("");
+        String[] inputToArray = gameStatus.split("");
 
         // write game status to two dimensional array
+        // more than 9 signs will be cut because of 3x3 size of array
         String [][] twoDimensionalArray = new String [3][3];
         int inputToArrayCounter = 0;
         for (int i = 0; i < twoDimensionalArray.length; i++) {

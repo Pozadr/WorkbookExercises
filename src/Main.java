@@ -25,7 +25,7 @@ public class Main {
         // Task5
         System.out.println("\nTask5");
         Task5 task5 = new Task5();
-        task5.displayWhoWon("0X_O0XO_X");
+        task5.displayWhoWon("XXXXoxoxoxXXXXX0000xxxx");
 
 
     }
