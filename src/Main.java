@@ -54,6 +54,7 @@ public class Main {
         // Task9Calculator
         System.out.println("\nTask9");
         Task9Calculator calc = new Task9Calculator();
+        // two args
         System.out.println("Add: " + calc.add(5, 12));
         System.out.println("Subtract: " + calc.subtract(5, 12));
         System.out.println("Multiply: " + calc.multiply(5, 12));
@@ -65,7 +66,15 @@ public class Main {
         System.out.println("Maximum: " + calc.max(500,10));
         System.out.println("Average: " + calc.average(5,12));
         System.out.println("Power: " + calc.power(2,10));
-
+        // three args
+        System.out.println("3 args:");
+        System.out.println("Add: " + calc.add(5, 12,2));
+        System.out.println("Subtract: " + calc.subtract(5, 12,1));
+        System.out.println("Multiply: " + calc.multiply(5, 12,2));
+        System.out.println("Divide: " + calc.divide(12, 2,3));
+        System.out.println("Minimum: " + calc.min(-3,-10,-3));
+        System.out.println("Maximum: " + calc.max(500,10,2));
+        System.out.println("Average: " + calc.average(5,12,11));
 
 
 
