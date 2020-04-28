@@ -11,14 +11,16 @@ public class Task7 {
 
 
     private boolean checkPesel(String pesel){
+        String[] peselStringArr;
+        int[] peselIntArr = new int[11];
         try{
             if(pesel.length() != 11){
                 throw new IllegalArgumentException(
                         "Wrond input data!" +
                                 "\nPESEL has to have 11 letters!");
             }
-            String[] peselStringArr =  pesel.split("");
-            int[] peselIntArr = new int[peselStringArr.length];
+            peselStringArr = pesel.split("");
+            peselIntArr = new int[peselStringArr.length];
             for(int i=0; i<11; i++){
                 peselIntArr[i] = Integer.parseInt(peselStringArr[i]);
                 System.out.print(peselIntArr[i]);
@@ -28,13 +30,16 @@ public class Task7 {
             System.out.println(ex.getMessage());
         }
 
-        //result = 1xa + 3xb + 7xc + 9xd + 1xe + 3xf + 7xg + 9xh + 1xi + 3xj + 1xk;
-        /*if(result % 10 == 0){
+        long result = 1*peselIntArr[0] + 3*peselIntArr[1] + 7*peselIntArr[2] + 9*peselIntArr[3]
+                + 1*peselIntArr[4] + 3*peselIntArr[5] + 7*peselIntArr[6] + 9*peselIntArr[7]
+                + 1*peselIntArr[8] + 3*peselIntArr[9] + 1*peselIntArr[10];
+        //System.out.println("Result sum: " + result);
+
+        if(result % 10 == 0){
             return true;
         }
         else{
             return false;
-        }*/
-        return true;
+        }
     }
 }

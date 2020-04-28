@@ -33,7 +33,7 @@ public class Main {
         // Task7
         System.out.println("\nTask7");
         Task7 task7 = new Task7();
-        task7.displayTask7("90021436721");
+        task7.displayTask7("90121411721");
 
 
 
