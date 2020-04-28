@@ -91,7 +91,26 @@ public class Main {
         System.out.println(task10.toString());
         System.out.println("Is Empty?: " + task10.isEmpty());
         System.out.println("Is Full?: " + task10.isFull());
-        //task10.pop();
+        task10.pop();
+        task10.pop();
+        task10.pop();
+        System.out.println(task10.toString());
+        System.out.println("Is Empty?: " + task10.isEmpty());
+        System.out.println("Is Full?: " + task10.isFull());
+        task10.pushAlternative(6);
+        task10.pushAlternative(9);
+        task10.pushAlternative(1);
+        System.out.println(task10.toString());
+        System.out.println("Is Empty?: " + task10.isEmpty());
+        System.out.println("Is Full?: " + task10.isFull());
+        task10.popAlternative();
+        task10.popAlternative();
+        task10.popAlternative();
+        task10.popAlternative();
+        task10.popAlternative();
+        System.out.println(task10.toString());
+        System.out.println("Is Empty?: " + task10.isEmpty());
+        System.out.println("Is Full?: " + task10.isFull());
 
 
 
