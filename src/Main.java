@@ -40,11 +40,16 @@ public class Main {
         audi.setModel("A8");
         audi.setColor("czerwony");
         audi.setProductionYear(2018);
-        audi.setUsed(true);
         System.out.println(audi.getModel());
         System.out.println(audi.getColor());
         System.out.println(audi.getProductionYear());
-        System.out.println(audi.isUsed());
+        System.out.println("Mielage: " + audi.getMileage());
+        System.out.println("Used? " + audi.isUsed());
+        audi.drive(100);
+        System.out.println("Mielage: " + audi.getMileage());
+        audi.drive(53600);
+        System.out.println("Mielage: " + audi.getMileage());
+        System.out.println("Used? " + audi.isUsed());
 
 
 

@@ -3,8 +3,24 @@ public class Task8Car {
     private int productionYear;
     private String color;
     private boolean used = false;
+    private int mileage = 0;
 
+
+    // other methods
+    public void drive(int mileage){
+        this.mileage += mileage;
+        if(this.mileage > 0){
+            setUsed(true);
+        }
+        else{
+            setUsed(false);
+        }
+    }
     // getters
+    public int getMileage() {
+        return mileage;
+    }
+
     public int getProductionYear() {
         return productionYear;
     }
@@ -18,6 +34,11 @@ public class Task8Car {
     }
 
     // setters
+
+    public void setMileage(int mileage) {
+        this.mileage = mileage;
+    }
+
     public void setColor(String color) {
         this.color = color;
     }
