@@ -34,6 +34,17 @@ public class Main {
         System.out.println("\nTask7");
         Task7 task7 = new Task7();
         task7.displayTask7("90121411721");
+        // Task8Car
+        System.out.println("\nTask8");
+        Task8Car audi = new Task8Car();
+        audi.setModel("A8");
+        audi.setColor("czerwony");
+        audi.setProductionYear(2018);
+        audi.setUsed(true);
+        System.out.println(audi.getModel());
+        System.out.println(audi.getColor());
+        System.out.println(audi.getProductionYear());
+        System.out.println(audi.isUsed());
 
 
 
