@@ -76,6 +76,12 @@ public class Main {
         System.out.println("Maximum: " + calc.max(500,10,2));
         System.out.println("Average: " + calc.average(5,12,11));
 
+        // Task10
+        System.out.println("\nTask10");
+        Task10 task10 = new Task10(5);
+        task10.push(2);
+        task10.toString();
+
 
 
     }
