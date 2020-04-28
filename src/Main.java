@@ -51,6 +51,21 @@ public class Main {
         System.out.println("Mielage: " + audi.getMileage());
         System.out.println("Used? " + audi.isUsed());
 
+        // Task9Calculator
+        System.out.println("\nTask9");
+        Task9Calculator calc = new Task9Calculator();
+        System.out.println("Add: " + calc.add(5, 12));
+        System.out.println("Subtract: " + calc.subtract(5, 12));
+        System.out.println("Multiply: " + calc.multiply(5, 12));
+        System.out.println("Divide: " + calc.divide(12, 2));
+        System.out.println("Is Positive?: " + calc.isPositive(-5));
+        System.out.println("Is Negative?: " + calc.isNegative(5));
+        System.out.println("Is Odd?: " + calc.isOdd(4));
+        System.out.println("Minimum: " + calc.min(-3,-10));
+        System.out.println("Maximum: " + calc.max(500,10));
+        System.out.println("Average: " + calc.average(5,12));
+        System.out.println("Power: " + calc.power(2,10));
+
 
 
 
