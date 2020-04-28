@@ -79,8 +79,19 @@ public class Main {
         // Task10
         System.out.println("\nTask10");
         Task10 task10 = new Task10(5);
+        System.out.println(task10.toString());
+        System.out.println("Is Empty?: " + task10.isEmpty());
+        System.out.println("Is Full?: " + task10.isFull());
         task10.push(2);
-        task10.toString();
+        task10.push(5);
+        task10.push(7);
+        task10.push(1);
+        task10.push(9);
+        task10.push(2);  // stack overflow
+        System.out.println(task10.toString());
+        System.out.println("Is Empty?: " + task10.isEmpty());
+        System.out.println("Is Full?: " + task10.isFull());
+        //task10.pop();
 
 
 
