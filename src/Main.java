@@ -30,6 +30,11 @@ public class Main {
         System.out.println("\nTask6");
         Task6 task6 = new Task6();
         task6.convertTextMessage("Ala ma kota, a kot ma Alę !");
+        // Task7
+        System.out.println("\nTask7");
+        Task7 task7 = new Task7();
+        task7.displayTask7("90021436721");
+
 
 
 
