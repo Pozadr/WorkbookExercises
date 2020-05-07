@@ -27,10 +27,27 @@ public class Task11 {
     }
 
     public Integer get(int idx) {
-        return null;
+        if (idx > this.array.length - 1) {
+            return null;
+        } else {
+            return this.array[idx];
+        }
     }
     public void remove(int idx) {
+        int oldArrLength = this.array.length;
+        int[] tmpArr = new int[oldArrLength - 1];
+        for (int i = 0; i < this.array.length; i++) {
+            if (i < idx) {
+                tmpArr[i] = this.array[i];
+            } else if (i == idx) {
+                continue;
+            } else {
+                tmpArr[i - 1] = this.array[i];
+            }
+        }
+        this.array = Arrays.copyOf(tmpArr, tmpArr.length);
     }
+
     public void swap(int from, int to) {
     }
 

@@ -123,7 +123,10 @@ public class Main {
         task11.add(222);
         task11.add(222, 0);
         task11.add(211, 10);
-        System.out.println(task11.toString());
+        System.out.println("toString: " + task11.toString());
+        System.out.println("Get [3]: " + task11.get(3));
+        task11.remove(2);
+        System.out.println("Remove [2]: " + task11.toString());
 
 
 
