@@ -112,6 +112,17 @@ public class Main {
         System.out.println("Is Empty?: " + task10.isEmpty());
         System.out.println("Is Full?: " + task10.isFull());
 
+        // Task11
+        System.out.println("\nTask11");
+        Task11 task11 = new Task11();
+        task11.add(2);
+        task11.add(7);
+        task11.add(5);
+        task11.add(4);
+        task11.add(9);
+        task11.add(222);
+        System.out.println(task11.toString());
+
 
 
     }

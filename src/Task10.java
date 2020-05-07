@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Task10 {
     private final int[] tab;
     private int stockElementRef = 0;
