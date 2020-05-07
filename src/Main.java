@@ -121,6 +121,8 @@ public class Main {
         task11.add(4);
         task11.add(9);
         task11.add(222);
+        task11.add(222, 0);
+        task11.add(211, 10);
         System.out.println(task11.toString());
 
 

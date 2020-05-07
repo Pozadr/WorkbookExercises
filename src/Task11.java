@@ -9,8 +9,8 @@ public class Task11 {
 
     public void add(Integer value) {
         int oldArrLength = this.array.length;
-        int[] tmpArr = new int [oldArrLength + 1];
-        for (int i = 0; i < this.array.length; i++){
+        int[] tmpArr = new int[oldArrLength + 1];
+        for (int i = 0; i < this.array.length; i++) {
             tmpArr[i] = this.array[i];
         }
         tmpArr[tmpArr.length - 1] = value;
@@ -18,7 +18,14 @@ public class Task11 {
     }
 
     public void add(Integer value, int idx) {
+        if (idx > this.array.length - 1) {
+            add(value);
+        } else {
+            this.array[idx] = value;
+        }
+
     }
+
     public Integer get(int idx) {
         return null;
     }
