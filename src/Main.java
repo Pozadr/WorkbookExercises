@@ -127,6 +127,8 @@ public class Main {
         System.out.println("Get [3]: " + task11.get(3));
         task11.remove(2);
         System.out.println("Remove [2]: " + task11.toString());
+        task11.swap(7,2);
+        System.out.println("Swap [7] [2]: " + task11.toString());
 
 
 

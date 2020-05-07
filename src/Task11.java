@@ -33,6 +33,7 @@ public class Task11 {
             return this.array[idx];
         }
     }
+
     public void remove(int idx) {
         int oldArrLength = this.array.length;
         int[] tmpArr = new int[oldArrLength - 1];
@@ -49,6 +50,26 @@ public class Task11 {
     }
 
     public void swap(int from, int to) {
+        if (from >= 0 && to <= this.array.length - 1
+                && from <= this.array.length - 1) {
+            int tmpValue = this.array[to];
+            this.array[to] = this.array[from];
+            this.array[from] = tmpValue;
+        } else if (from > this.array.length - 1) {
+            System.out.println("There is no value on " + from
+                            + " position. Array will be extended by 1 to "
+                            + (this.array.length) + " with value 0.");
+            add(0);
+            swap(from, to);
+        } else if (from >= 0 && to > this.array.length - 1) {
+            System.out.println("There is no value on " + to
+                    + " position. Array will be extended by 1 to "
+                    + (this.array.length) + " with value 0.");
+            add(0);
+            swap(from, to);
+        } else {
+            System.out.println("Failure! \"from\" input is less than 0!");
+        }
     }
 
     public String toString() {
