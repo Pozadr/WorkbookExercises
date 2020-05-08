@@ -73,6 +73,7 @@ public class Task11 {
     }
 
     public String toString() {
+        System.out.println("Array length: " + this.array.length);
         return String.join(" ", Arrays.toString(this.array));
     }
 
