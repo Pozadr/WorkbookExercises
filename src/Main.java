@@ -140,6 +140,8 @@ public class Main {
         account2.deposit(5000);
         account.withdraw(200);
         account.transfer(account2, 500);
+        System.out.println(account.toString());
+        System.out.println(account2.toString());
 
 
 

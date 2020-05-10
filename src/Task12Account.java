@@ -87,5 +87,13 @@ public class Task12Account {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Account{" +
+                "name='" + name + '\'' +
+                ", balance=" + balance +
+                ", debit=" + debit +
+                ", maxDebit=" + maxDebit +
+                '}';
+    }
 }
