@@ -4,6 +4,13 @@ public class Task12Account {
     private boolean debit = false;
     private int maxDebit = -1000;
 
+    // constructor
+    public Task12Account(String name, int balance, int maxDebit) {
+        this.name = name;
+        this.balance = balance;
+    }
+
+    // setters
     public void setName(String name) {
         this.name = name;
     }
@@ -16,6 +23,7 @@ public class Task12Account {
         this.debit = debit;
     }
 
+    // getters
     public String getName() {
         return name;
     }
@@ -28,6 +36,14 @@ public class Task12Account {
         return debit;
     }
 
+    // other methods
+    public void displayDetails (String transaction, int oldBalance, int amount) {
+        System.out.println(this.name);
+        System.out.println("Account balance: " + oldBalance + " | "
+        + transaction +  " " + amount + " | "
+        + "After transaction: " + this.balance);
+    }
+
     public void deposit(int amount) {
         int oldBalance = this.balance;
         if (amount > 0) {
@@ -38,17 +54,17 @@ public class Task12Account {
         if (this.balance > 0) {
             this.debit = false;
         }
-        // display details
-        System.out.println("Account balance: " + oldBalance + " | "
-                + "Deposit: " + amount + " | "
-                + "After transaction: " + this.balance);
+
+       displayDetails("Deposit", oldBalance, amount);
     }
 
-    public void withdraw(int amount) {
+    public boolean withdraw(int amount) { // return true if transaction passed
         int oldBalance = this.balance;
+        boolean passed = false;
         if (amount > 0) {
             if (this.balance - amount >= maxDebit) {
                 this.balance -= amount;
+                passed = true;
             } else {
                 System.out.println("Maximum debit: " + this.maxDebit
                         + " reached. Withdraw is not possible.");
@@ -56,16 +72,19 @@ public class Task12Account {
         } else {
             System.out.println("Amount has to be more than 0.");
         }
-        // display details
-        System.out.println("Account balance: " + oldBalance + " | "
-                + "Withdraw: " + amount + " | "
-                + "After transaction: " + this.balance);
-        if (this.balance < 0) {
-            this.debit = true;
-            System.out.println("You have the debit: " + this.balance
-                    + " on your account.");
-        }
+        displayDetails("Withdraw", oldBalance, amount);
 
+        return passed;
+    }
+
+    public void transfer (Task12Account other, int amount) {
+        System.out.println("Transfer " + amount + " from: " + this.name );
+        System.out.println("to: " + other.name );
+        // withdraw from present account
+        if (withdraw(amount)) {
+            // deposit on other account
+            other.deposit(amount);
+        }
     }
 
 

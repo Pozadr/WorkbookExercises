@@ -132,9 +132,15 @@ public class Main {
 
         // Task12
         System.out.println("\nTask12");
-        Task12Account account = new Task12Account();
+        Task12Account account = new Task12Account("Millenium: Pawel Kowalski"
+                ,10000, -5000);
+        Task12Account account2 = new Task12Account("mBank: Andrzej Nowak"
+                ,1000, -2000);
         account.deposit(1000);
+        account2.deposit(5000);
         account.withdraw(200);
+        account.transfer(account2, 500);
+
 
 
     }
