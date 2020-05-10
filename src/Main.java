@@ -133,11 +133,8 @@ public class Main {
         // Task12
         System.out.println("\nTask12");
         Task12Account account = new Task12Account();
-        System.out.println(account.getBalance());
         account.deposit(1000);
-        System.out.println(account.getBalance());
-        account.withdraw(1100);
-        System.out.println(account.getBalance());
+        account.withdraw(200);
 
 
     }
